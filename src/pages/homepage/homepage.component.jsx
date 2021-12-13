@@ -2,7 +2,7 @@ import React from 'react';
 import './homepage.styless.scss';
 
 // Components
-import { PostList } from '../../components/post-list/post-list.component';
+import PostList from '../../components/post-list/post-list.component';
 
 class HomePage extends React.Component {
   constructor() {
@@ -17,6 +17,10 @@ class HomePage extends React.Component {
     return (
       <div>
         <h1 className='title'>THE MODERN POSTS</h1>
+
+        {/* <div className='section-title'>
+          <h2>The Latest</h2>
+        </div> */}
 
         <PostList posts={this.state.posts} />
       </div>

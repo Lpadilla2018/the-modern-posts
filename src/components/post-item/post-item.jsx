@@ -15,7 +15,6 @@ const PostItem = ({ title, id }) => {
       >
         {title}
       </h2>
-      Post Item
     </div>
   );
 };
