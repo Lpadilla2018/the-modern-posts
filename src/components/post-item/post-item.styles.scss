@@ -4,10 +4,15 @@
   text-align: left;
   padding: 20px;
   margin: 20px;
-  border: solid;
+  border: 0.5px solid black;
+  background-color: white;
 
   h2 {
     font-size: 25px;
+    font-weight: bold;
     color: rgb(168, 118, 62);
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

@@ -5,7 +5,7 @@ import './post-details.styles.scss';
 // Components
 import BackButton from '../../components/back-button/back-button.component';
 import PostInfo from '../../components/post-info/post-info.component';
-
+import CommentList from '../../components/comment-list/comment-list.component';
 class PostDetails extends React.Component {
   constructor() {
     super();
@@ -21,14 +21,7 @@ class PostDetails extends React.Component {
       <div className='post-details'>
         <PostInfo {...this.state.postDetails} />
         {/* create component */}
-        <div className='comments-list'>
-          {this.state.postComments.map((comment, index) => (
-            <div key={index}>
-              <h4>{comment.name}</h4>
-              <p>{comment.body}</p>
-            </div>
-          ))}
-        </div>
+        <CommentList comments={this.state.postComments}/>
         <BackButton />
       </div>
     );

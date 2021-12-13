@@ -1,14 +1,16 @@
 .back-button {
+  display: flex;
+  padding: 20px;
   button {
     background-color: rgb(111, 26, 7);
     border: none;
     color: white;
     padding: 0px 30px;
-    /* text-align: center; */
-    /* text-decoration: none; */
-    /* display: inline-block; */
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-
+    &:hover {
+      opacity: .8;
+    }
   }
 }
