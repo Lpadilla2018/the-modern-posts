@@ -1,0 +1,13 @@
+.post-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  border: solid;
+
+  h2 {
+    color: rgb(168, 118, 62);
+
+  }
+}
