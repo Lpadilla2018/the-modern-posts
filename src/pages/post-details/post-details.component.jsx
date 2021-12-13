@@ -20,7 +20,6 @@ class PostDetails extends React.Component {
     return (
       <div className='post-details'>
         <PostInfo {...this.state.postDetails} />
-        {/* create component */}
         <CommentList comments={this.state.postComments}/>
         <BackButton />
       </div>
@@ -31,6 +30,9 @@ class PostDetails extends React.Component {
     this.callPostsAndCommentsServices();
   }
 
+  /**
+   * Calls services in parallel to retrieve Post Details and Post Comments
+   */
   callPostsAndCommentsServices() {
     Promise.all([
       fetch(

@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom';
 
 import './post-item.styles.scss';
 
+/**
+ * @param object Takes input values title and id
+ * Displays title and uses id to navigate to correct page
+ * @returns 
+ */
 const PostItem = ({ title, id }) => {
   const navigate = useNavigate();
 
