@@ -1,9 +1,8 @@
-.back-button {
+.custom-button {
   display: flex;
   padding: 20px;
   button {
-    width: 300px;
-    background-color: black;
+    background-color: rgb(111, 26, 7);
     border: none;
     color: white;
     padding: 0px 30px;
@@ -11,7 +10,7 @@
     font-weight: bold;
     cursor: pointer;
     &:hover {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
 }
