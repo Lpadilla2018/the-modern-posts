@@ -6,10 +6,7 @@ import './post-details.styles.scss';
 import BackButton from '../../components/back-button/back-button.component';
 import PostInfo from '../../components/post-info/post-info.component';
 import CommentList from '../../components/comment-list/comment-list.component';
-import CustomButton from '../../components/custom-button/custom-button.component';
-import AddComment from '../../components/add-comment/add-comment.component';
 import CommentForm from '../../components/comment-form/comment-form.component';
-
 
 class PostDetails extends React.Component {
   constructor() {
@@ -27,7 +24,11 @@ class PostDetails extends React.Component {
         <PostInfo {...this.state.postDetails} />
         <CommentList comments={this.state.postComments} />
 
-        <CommentForm handleOnSubmit={this.addComment}/>
+        <div className='comment-header'>
+          <h3>Write A Comment</h3>
+          <hr></hr>
+        </div>
+        <CommentForm handleOnSubmit={this.addComment} />
         <BackButton />
       </div>
     );
@@ -37,16 +38,45 @@ class PostDetails extends React.Component {
     this.callPostsAndCommentsServices();
   }
 
-  addComment = (event) => {
+  addComment = async (event) => {
     // Stop reloading page on form submit
     event.preventDefault();
-    this.setState({
-      postComments: [
-        { name: 'test', email: 'test', body: 'test' },
-        ...this.state.postComments,
-      ],
-    });
+
+    const name = event.target[0].value;
+    const email = event.target[1].value;
+    const comment = event.target[2].value;
+
+    try {
+      const response = await this.callAddCommentService(name, email, comment);
+
+      // Update UI state
+      this.setState({
+        postComments: [
+          { name: name, email: email, body: comment },
+          ...this.state.postComments,
+        ],
+      });
+
+      // Clear form data
+      event.target.reset();
+    } catch (error) {
+      console.error('Error Adding Comment: ', error.message);
+    }
   };
+
+  callAddCommentService(name, email, comment) {
+    return fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        body: comment,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    }).then((response) => response.json());
+  }
 
   /**
    * Calls services in parallel to retrieve Post Details and Post Comments

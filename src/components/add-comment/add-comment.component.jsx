@@ -1,16 +1,11 @@
 import './add-comment.styles.scss';
 
-const AddComment = ({
-  handleNameChange,
-  handleEmailChange,
-  handleCommentChange,
-}) => (
+const AddComment = () => (
   <div className='add-comment'>
-    <input onChange={handleNameChange} placeholder='Name'></input>
-    <input onChange={handleEmailChange} placeholder='Email'></input>
+    <input placeholder='Name'></input>
+    <input placeholder='Email'></input>
     <textarea
       label='comments'
-      onChange={handleCommentChange}
       placeholder='Enter your comment here..'
     ></textarea>
   </div>
