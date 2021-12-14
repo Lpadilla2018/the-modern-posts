@@ -6,6 +6,7 @@ import './post-details.styles.scss';
 import BackButton from '../../components/back-button/back-button.component';
 import PostInfo from '../../components/post-info/post-info.component';
 import CommentList from '../../components/comment-list/comment-list.component';
+
 class PostDetails extends React.Component {
   constructor() {
     super();
@@ -20,7 +21,7 @@ class PostDetails extends React.Component {
     return (
       <div className='post-details'>
         <PostInfo {...this.state.postDetails} />
-        <CommentList comments={this.state.postComments}/>
+        <CommentList comments={this.state.postComments} />
         <BackButton />
       </div>
     );
