@@ -4,7 +4,7 @@ import './back-button.styles.scss';
 
 /**
  * BackButton Component is used to navigate back to the homepage
- * @returns 
+ * @returns
  */
 const BackButton = () => {
   const navigate = useNavigate();

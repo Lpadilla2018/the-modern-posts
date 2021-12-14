@@ -3,10 +3,9 @@ import React from 'react';
 import './post-info.styles.scss';
 
 /**
- * 
  * @param object Takes input values title and body
  * Displays title and body of the current post
- * @returns 
+ * @returns
  */
 const PostInfo = ({ title, body }) => (
   <div className='post-info'>

@@ -5,9 +5,9 @@ import CommentInfo from '../comment-info/comment-info.component';
 
 const CommentList = ({ comments }) => (
   <div className='comment-list'>
-  <h2>Comments ({getCommentsCount(comments)})</h2>
+    <h2>Comments ({getCommentsCount(comments)})</h2>
     {comments.map((comment, index) => (
-      <CommentInfo key={index} {...comment}/>
+      <CommentInfo key={index} {...comment} />
     ))}
   </div>
 );
