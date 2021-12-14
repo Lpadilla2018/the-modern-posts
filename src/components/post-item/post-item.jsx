@@ -15,7 +15,7 @@ const PostItem = ({ title, id }) => {
     <div className='post-item'>
       <h2
         onClick={() => {
-          navigate(`/post/${id}`);
+          navigate(`/the-modern-posts/post/${id}`);
         }}
       >
         {title}

@@ -10,7 +10,7 @@ const BackButton = () => {
   const navigate = useNavigate();
   return (
     <div className='back-button'>
-      <button onClick={() => navigate('/')}>
+      <button onClick={() => navigate('/the-modern-posts')}>
         <p>Back to Posts</p>
       </button>
     </div>

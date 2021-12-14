@@ -9,8 +9,8 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path='/' element={<HomePage />}></Route>
-        <Route path='/post/:postId' element={<GetPostDetails/>}></Route>
+        <Route path='/the-modern-posts' element={<HomePage />}></Route>
+        <Route path='/the-modern-posts/post/:postId' element={<GetPostDetails/>}></Route>
       </Routes>
     </div>
   );
