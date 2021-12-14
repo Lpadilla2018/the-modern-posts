@@ -38,6 +38,12 @@ class PostDetails extends React.Component {
     this.callPostsAndCommentsServices();
   }
 
+  /**
+   * Uses form input values to make an API call in order to save the new comment
+   * Update UI state
+   * Then Reset form on successful API call
+   * @param event Grab data from form event
+   */
   addComment = async (event) => {
     // Stop reloading page on form submit
     event.preventDefault();
@@ -64,6 +70,13 @@ class PostDetails extends React.Component {
     }
   };
 
+  /**
+   * POST call to save new comment
+   * @param {*} name string type
+   * @param {*} email string type
+   * @param {*} comment string type
+   * @returns JSON object response from API call
+   */
   callAddCommentService(name, email, comment) {
     return fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',

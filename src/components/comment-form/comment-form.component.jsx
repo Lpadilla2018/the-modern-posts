@@ -5,9 +5,14 @@ import './comment-form.styles.scss';
 import AddComment from '../add-comment/add-comment.component';
 import CustomButton from '../custom-button/custom-button.component';
 
-const CommentForm = (props) => {
+/**
+ * Form that displays input boxes and a submit button
+ * @param obeject Takes in handleOnSubmit to use for onSubmit action
+ * @returns
+ */
+const CommentForm = ({ handleOnSubmit }) => {
   return (
-    <form onSubmit={props.handleOnSubmit}>
+    <form onSubmit={handleOnSubmit}>
       <AddComment />
       <CustomButton buttonText={'Post Comment'} type='submit' />
     </form>

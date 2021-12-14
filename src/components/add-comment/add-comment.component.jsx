@@ -1,5 +1,9 @@
 import './add-comment.styles.scss';
 
+/**
+ * Displays input and textarea elements to use for new comment form
+ * @returns
+ */
 const AddComment = () => (
   <div className='add-comment'>
     <input placeholder='Name'></input>

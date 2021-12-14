@@ -3,6 +3,11 @@ import './comment-list.styles.scss';
 // Components
 import CommentInfo from '../comment-info/comment-info.component';
 
+/**
+ * Loops through comments, displays a list of CommentInfo and count of comments
+ * @param object Takes input comments
+ * @returns
+ */
 const CommentList = ({ comments }) => (
   <div className='comment-list'>
     <h2>Comments ({getCommentsCount(comments)})</h2>
