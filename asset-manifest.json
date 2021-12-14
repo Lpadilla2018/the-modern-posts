@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/the-modern-posts/static/css/main.99683ab9.chunk.css",
+    "main.js": "/the-modern-posts/static/js/main.928c26e1.chunk.js",
+    "main.js.map": "/the-modern-posts/static/js/main.928c26e1.chunk.js.map",
+    "runtime-main.js": "/the-modern-posts/static/js/runtime-main.1aae84ab.js",
+    "runtime-main.js.map": "/the-modern-posts/static/js/runtime-main.1aae84ab.js.map",
+    "static/js/2.784bef08.chunk.js": "/the-modern-posts/static/js/2.784bef08.chunk.js",
+    "static/js/2.784bef08.chunk.js.map": "/the-modern-posts/static/js/2.784bef08.chunk.js.map",
+    "static/js/3.865f535e.chunk.js": "/the-modern-posts/static/js/3.865f535e.chunk.js",
+    "static/js/3.865f535e.chunk.js.map": "/the-modern-posts/static/js/3.865f535e.chunk.js.map",
+    "index.html": "/the-modern-posts/index.html",
+    "static/css/main.99683ab9.chunk.css.map": "/the-modern-posts/static/css/main.99683ab9.chunk.css.map",
+    "static/js/2.784bef08.chunk.js.LICENSE.txt": "/the-modern-posts/static/js/2.784bef08.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1aae84ab.js",
+    "static/js/2.784bef08.chunk.js",
+    "static/css/main.99683ab9.chunk.css",
+    "static/js/main.928c26e1.chunk.js"
+  ]
+}
