@@ -58,8 +58,8 @@ class PostDetails extends React.Component {
       // Update UI state
       this.setState({
         postComments: [
-          { name: name, email: email, body: comment },
           ...this.state.postComments,
+          { name: name, email: email, body: comment },
         ],
       });
 
