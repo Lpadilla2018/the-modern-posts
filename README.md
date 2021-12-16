@@ -2,6 +2,8 @@
 
 An application that displays list of posts, post details and related comments. User has the ability to add new comments.
 
+Hosted link: https://lpadilla2018.github.io/the-modern-posts
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
